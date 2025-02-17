@@ -40,14 +40,14 @@ export default function LanguagesList() {
     const [activeAccordion, setActiveAccordion] = useState(null);
 
     function renderAccordion() {
-        return languages.map(language => {
-            return <LanguageAccordion
+        return languages.map(language =>
+            <LanguageAccordion
                 key={language.id}
                 title={language.title}
                 description={language.description}
                 isOpen={activeAccordion === language.id} onToggle={() => setActiveAccordion(language.id)}
             />
-        })
+        )
     }
 
     return (

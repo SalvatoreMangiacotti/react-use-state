@@ -29,10 +29,6 @@ span {
   /* Cambia il display da block a inline-block */
 }
 
-.accordion-btn:hover {
-  background-color: #0d6dfd75;
-}
-
 .active-bg {
   background-color: #ffc107;
 }
