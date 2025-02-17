@@ -37,14 +37,13 @@ const languages = [
 export default function LanguagesList() {
 
     function renderAccordion() {
-        return languages.map(language =>
-            <LanguageAccordion
-
+        return languages.map(language => {
+            return <LanguageAccordion
                 key={language.id}
                 title={language.title}
-
+                description={language.description}
             />
-        )
+        })
     }
 
     return (
